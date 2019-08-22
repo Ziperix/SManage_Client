@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onMouseDragged="#MouseDragged" onMousePressed="#MousePressed" prefHeight="520.0" prefWidth="940.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginWindowController">
+    <children>
+        <TextField fx:id="usernameInput" layoutX="25.0" layoutY="340.0" prefHeight="26.0" prefWidth="211.0" />
+        <PasswordField fx:id="passwordInput" layoutX="25.0" layoutY="394.0" prefHeight="26.0" prefWidth="211.0" />
+        <Label layoutX="25.0" layoutY="375.0" prefHeight="16.0" prefWidth="179.0" text="Password:" />
+        <Label layoutX="25.0" layoutY="321.0" prefHeight="16.0" prefWidth="179.0" text="Username:" />
+        <Button fx:id="loginButton" layoutX="24.0" layoutY="429.0" mnemonicParsing="false" onAction="#LoginButtonClicked" prefHeight="26.0" prefWidth="143.0" text="Login">
+            <font>
+                <Font size="12.0" />
+            </font>
+        </Button>
+        <Button fx:id="configButton" layoutX="174.0" layoutY="429.0" mnemonicParsing="false" onAction="#ConfigButtonClicked" prefHeight="26.0" prefWidth="62.0" text="Config">
+            <font>
+                <Font size="12.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="520.0" fitWidth="668.0" layoutX="272.0" pickOnBounds="true">
+            <image>
+                <Image url="@../login_photo.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="134.0" fitWidth="125.0" layoutX="71.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../s_256.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="26.0" fitWidth="33.0" layoutX="900.0" layoutY="14.0" onMouseClicked="#ExitImageButtonClicked" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="6.0">
+            <image>
+                <Image url="@../exit_icon_2.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="26.0" fitWidth="33.0" layoutX="883.0" layoutY="6.0" onMouseClicked="#MinImageButtonClicked" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="31.0" AnchorPane.topAnchor="6.0">
+            <image>
+                <Image url="@../minimize_icon_2.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
